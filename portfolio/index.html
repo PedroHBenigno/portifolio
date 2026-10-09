@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Benigno | Desenvolvedor Back-End</title>
+  <meta name="description" content="Portfólio de Pedro Henrique Benigno Ferreira — Desenvolvedor Back-End, automação, Python, C#, SQL e IA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body class="pt">
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#home" class="brand" data-i18n="nav.brand">&lt;Pedro /&gt;</a>
+      <nav class="nav-links">
+        <a href="#home" data-i18n="nav.home">Início</a>
+        <a href="#sobre" data-i18n="nav.sobre">Sobre</a>
+        <a href="#skills" data-i18n="nav.skills">Habilidades</a>
+        <a href="#projetos" data-i18n="nav.projetos">Projetos</a>
+        <a href="#experiencia" data-i18n="nav.experiencia">Experiência</a>
+        <a href="#contato" data-i18n="nav.contato">Contato</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-pt">PT</span><span class="lang-sep">/</span><span class="lang-en">EN</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" data-i18n="nav.home">Início</a>
+    <a href="#sobre" data-i18n="nav.sobre">Sobre</a>
+    <a href="#skills" data-i18n="nav.skills">Habilidades</a>
+    <a href="#projetos" data-i18n="nav.projetos">Projetos</a>
+    <a href="#experiencia" data-i18n="nav.experiencia">Experiência</a>
+    <a href="#contato" data-i18n="nav.contato">Contato</a>
+  </div>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Olá, eu sou</p>
+        <h1>
+          <span data-i18n="hero.name">Pedro Henrique Benigno Ferreira</span>
+          <span class="gradient" data-i18n="hero.role">Desenvolvedor Back-End</span>
+        </h1>
+        <p class="hero-sub" data-i18n="hero.sub">
+          Automação · Python · C# · SQL · Integração com IA
+        </p>
+        <p class="hero-desc" data-i18n="hero.desc">
+          Crio automações e soluções que eliminam tarefas repetitivas e aumentam a eficiência operacional.
+        </p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary" data-i18n="hero.ctaProjects">Ver Projetos</a>
+          <a href="#contato" class="btn btn-outline" data-i18n="hero.ctaContact">Fale Comigo</a>
+        </div>
+      </div>
+      <div class="hero-code">
+        <div class="code-card">
+          <div class="code-head">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="code-file">main.py</span>
+          </div>
+          <pre><code><span class="kw">from</span> <span class="mod">automacao</span> <span class="kw">import</span> <span class="fn">otimizar</span>
+
+<span class="com"># Eliminando tarefas repetitivas</span>
+<span class="kw">def</span> <span class="fn">main</span>():
+    <span class="var">fluxo</span> = otimizar(processo=sua_empresa)
+    <span class="var">fluxo</span>.eliminar(repeticoes=True)
+    <span class="kw">return</span> <span class="str">"+8h economizadas/semana"</span></code></pre>
+        </div>
+      </div>
+    </div>
+    <a href="#sobre" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section sobre">
+    <div class="container">
+      <h2 class="section-title"><span class="num">01.</span> <span data-i18n="sobre.title">Sobre mim</span></h2>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p data-i18n="sobre.p1">
+            Sou estudante de Análise e Desenvolvimento de Sistemas na PUC Minas, com
+            experiência prática em automação, integração de sistemas e desenvolvimento
+            de soluções usando Python, JavaScript e Inteligência Artificial.
+          </p>
+          <p data-i18n="sobre.p2">
+            Atualmente atuo na Chammas Engenharia, onde crio automações que eliminam
+            tarefas repetitivas e aumentam a eficiência operacional — reduzindo cerca de
+            8 horas de trabalho manual por semana.
+          </p>
+          <div class="tech-flags">
+            <span data-i18n="sobre.here">Atualmente focando em:</span>
+            <div class="flag-row">
+              <i class="fab fa-python"></i>
+              <i class="fas fa-robot"></i>
+              <i class="fas fa-database"></i>
+              <i class="fa-solid fa-brain"></i>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-stats">
+          <div class="stat"><strong data-i18n="sobre.stat1v">8h</strong><span data-i18n="sobre.stat1l">semanais economizadas</span></div>
+          <div class="stat"><strong data-i18n="sobre.stat2v">100%</strong><span data-i18n="sobre.stat2l">foco em automação</span></div>
+          <div class="stat"><strong data-i18n="sobre.stat3v">4+</strong><span data-i18n="sobre.stat3l">projetos desenvolvidos</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title"><span class="num">02.</span> <span data-i18n="skills.title">Habilidades</span></h2>
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Preenchido via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="section projetos">
+    <div class="container">
+      <h2 class="section-title"><span class="num">03.</span> <span data-i18n="projetos.title">Projetos</span></h2>
+      <div class="projetos-grid" id="projetosGrid"></div>
+    </div>
+  </section>
+
+  <!-- Experiência -->
+  <section id="experiencia" class="section experiencia">
+    <div class="container">
+      <h2 class="section-title"><span class="num">04.</span> <span data-i18n="exp.title">Experiência</span></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3 data-i18n="exp.job1.title">Analista de Suporte de TI (Automação)</h3>
+            <p class="timeline-org" data-i18n="exp.job1.org">Chammas Engenharia</p>
+            <p class="timeline-date" data-i18n="exp.job1.date">Jan/2026 — Atual</p>
+            <ul>
+              <li data-i18n="exp.job1.b1">Desenvolvimento de automações com Python e Google Apps Script.</li>
+              <li data-i18n="exp.job1.b2">Integração com IA (Gemini API) para leitura automática de PDFs.</li>
+              <li data-i18n="exp.job1.b3">Automação de inventário patrimonial e controle de ativos.</li>
+              <li data-i18n="exp.job1.b4">Mapeamento e melhoria de processos internos.</li>
+              <li data-i18n="exp.job1.b5">Redução de aproximadamente 8 horas semanais de trabalho manual.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section contato">
+    <div class="container">
+      <h2 class="section-title"><span class="num">05.</span> <span data-i18n="contato.title">Contato</span></h2>
+      <p class="contato-desc" data-i18n="contato.desc">
+        Tem um projeto ou vaga em mente? Vamos conversar!
+      </p>
+      <div class="contato-links">
+        <a href="mailto:pedro2henribenigno8@gmail.com" class="contato-card">
+          <i class="fas fa-envelope"></i>
+          <span>pedro2henribenigno8@gmail.com</span>
+        </a>
+        <a href="tel:+5531998184117" class="contato-card">
+          <i class="fas fa-phone"></i>
+          <span data-i18n="contato.phone">(31) 99818-4117</span>
+        </a>
+        <a href="https://github.com/PedroHBenigno" target="_blank" rel="noopener" class="contato-card">
+          <i class="fab fa-github"></i>
+          <span>github.com/PedroHBenigno</span>
+        </a>
+        <a href="#" class="contato-card">
+          <i class="fab fa-instagram"></i>
+          <span data-i18n="contato.social">Redes sociais</span>
+        </a>
+      </div>
+      <p class="contato-note">
+        <span data-i18n="contato.cnh">CNH B</span> · <span data-i18n="contato.local">Belo Horizonte - MG</span>
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Pedro Benigno. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
+      <a href="#home" class="back-top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
